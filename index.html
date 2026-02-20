@@ -1,260 +1,709 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>TJ Selim Reja | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TJ Selim Reja - AI Developer & Business Builder specializing in AI/ML, Python, Notion consulting, and digital solutions">
+    <meta name="keywords" content="AI Developer, Machine Learning, Python, Notion Expert, Notion Consultant, Web Developer, Travel Agency">
+    <meta name="author" content="TJ Selim Reja">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tjselimreja.com/">
+    <meta property="og:title" content="TJ Selim Reja - AI Developer & Business Builder">
+    <meta property="og:description" content="AI Developer & Business Builder specializing in AI/ML, Python, Notion consulting, and digital solutions">
+    <meta property="og:image" content="https://i.postimg.cc/nrps3QQy/grok_image_1771139414722.jpg">
 
-  <!-- ===== CSS (Your upgraded style) ===== -->
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    :root {
-      --bg-primary: #0a0a0a;
-      --bg-secondary: #1a1a1a;
-      --text-primary: #ffffff;
-      --text-secondary: #a0a0a0;
-      --accent: #3b82f6;
-      --accent-hover: #2563eb;
-      --border: #2a2a2a;
-    }
-
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, Arial, sans-serif;
-      background: var(--bg-primary);
-      color: var(--text-primary);
-      line-height: 1.6;
-    }
-
-    /* ===== NAV ===== */
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(10, 10, 10, 0.95);
-      backdrop-filter: blur(10px);
-      padding: 1rem 0;
-      border-bottom: 1px solid var(--border);
-      z-index: 1000;
-    }
-
-    nav .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 0 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    nav .logo {
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: white;
-      text-decoration: none;
-    }
-
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 1.5rem;
-    }
-
-    nav a {
-      color: var(--text-secondary);
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      color: var(--accent);
-    }
-
-    /* ===== HERO ===== */
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 6rem 2rem 2rem;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: clamp(2.5rem, 8vw, 4.5rem);
-      font-weight: 800;
-      background: linear-gradient(135deg, #fff, #a0a0a0);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .hero .subtitle {
-      font-size: 1.5rem;
-      color: var(--accent);
-      margin: 1rem 0;
-      font-weight: 600;
-    }
-
-    .hero p {
-      max-width: 650px;
-      margin: auto;
-      color: var(--text-secondary);
-      font-size: 1.1rem;
-    }
-
-    .cta-btn {
-      display: inline-block;
-      margin-top: 2rem;
-      padding: 1rem 2.5rem;
-      background: var(--accent);
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .cta-btn:hover {
-      background: var(--accent-hover);
-    }
-
-    /* ===== SECTIONS ===== */
-    section {
-      max-width: 1200px;
-      margin: auto;
-      padding: 6rem 2rem;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 2.3rem;
-      margin-bottom: 3rem;
-    }
-
-    /* ===== ABOUT ===== */
-    .about-text {
-      max-width: 800px;
-      margin: auto;
-      text-align: center;
-      color: var(--text-secondary);
-      font-size: 1.1rem;
-    }
-
-    /* ===== SKILLS ===== */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .skill-card {
-      background: var(--bg-secondary);
-      padding: 1.5rem;
-      text-align: center;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-    }
-
-    /* ===== PROJECTS ===== */
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-    }
-
-    .project-card {
-      background: var(--bg-secondary);
-      padding: 2rem;
-      border-radius: 12px;
-      border: 1px solid var(--border);
-    }
-
-    /* ===== FOOTER ===== */
-    footer {
-      text-align: center;
-      padding: 3rem 2rem;
-      border-top: 1px solid var(--border);
-      color: var(--text-secondary);
-    }
-
-    @media (max-width: 768px) {
-      nav ul {
-        display: none;
-      }
-    }
-  </style>
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tjselimreja.com/">
+    <meta property="twitter:title" content="TJ Selim Reja - AI Developer & Business Builder">
+    <meta property="twitter:description" content="AI Developer & Business Builder specializing in AI/ML, Python, Notion consulting, and digital solutions">
+    <meta property="twitter:image" content="https://i.postimg.cc/nrps3QQy/grok_image_1771139414722.jpg">
+    
+    <title>TJ Selim Reja - AI Developer & Business Builder</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Inter Tight Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "LeKapV_-GfJoeJzem",
+            });
+        })();
+    </script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter Tight', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-in-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'slide-in-left': 'slideInLeft 0.6s ease-out',
+                        'slide-in-right': 'slideInRight 0.6s ease-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                        slideInLeft: {
+                            '0%': { transform: 'translateX(-50px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' },
+                        },
+                        slideInRight: {
+                            '0%': { transform: 'translateX(50px)', opacity: '0' },
+                            '100%': { transform: 'translateX(0)', opacity: '1' },
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        * {
+            font-weight: 400;
+        }
+        
+        .light {
+            font-weight: 300;
+        }
+        
+        .medium {
+            font-weight: 500;
+        }
+        
+        .semibold {
+            font-weight: 600;
+        }
+        
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Image hover effect */
+        .project-image {
+            transition: transform 0.3s ease;
+        }
+        
+        .project-image:hover {
+            transform: scale(1.02);
+        }
+        
+        /* Button hover effect */
+        .btn-hover {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-hover::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: currentColor;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .btn-hover:hover::after {
+            transform: scaleX(1);
+        }
+        
+        /* Loading animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(0,0,0,0.1);
+            border-radius: 50%;
+            border-top-color: #000;
+            animation: spin 0.6s linear infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Success message */
+        .success-message {
+            display: none;
+            padding: 1rem;
+            background: #10b981;
+            color: white;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            animation: slideUp 0.3s ease-out;
+        }
+        
+        .success-message.show {
+            display: block;
+        }
+        
+        /* Mobile menu */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: white;
+            z-index: 100;
+            padding: 2rem;
+            animation: fadeIn 0.3s ease-out;
+        }
+        
+        .mobile-menu.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* Scroll reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+        
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
-
-<body>
-
-  <!-- NAV -->
-  <nav>
-    <div class="container">
-      <a href="#" class="logo">TJ Selim</a>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-      </ul>
+<body class="font-sans bg-white text-black antialiased">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm border-b border-neutral-100">
+        <div class="max-w-5xl mx-auto px-6 md:px-8 py-4 md:py-6 flex items-center justify-between">
+            <a href="#" class="text-sm md:text-base semibold">TJ</a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex gap-8 text-sm">
+                <a href="#about" class="text-neutral-400 hover:text-black transition-colors btn-hover">About</a>
+                <a href="#work" class="text-neutral-400 hover:text-black transition-colors btn-hover">Work</a>
+                <a href="#contact" class="text-neutral-400 hover:text-black transition-colors btn-hover">Contact</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-neutral-600 hover:text-black">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <button id="close-menu" class="absolute top-8 right-8 text-neutral-600 hover:text-black">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        <div class="flex flex-col gap-8 text-2xl text-center">
+            <a href="#about" class="mobile-menu-link text-neutral-600 hover:text-black transition-colors">About</a>
+            <a href="#work" class="mobile-menu-link text-neutral-600 hover:text-black transition-colors">Work</a>
+            <a href="#contact" class="mobile-menu-link text-neutral-600 hover:text-black transition-colors">Contact</a>
+        </div>
     </div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div>
-      <h1>TJ Selim Reja</h1>
-      <div class="subtitle">Frontend Learner & Philosophy Explorer</div>
-      <p>
-        I build clean, modern web interfaces and love learning philosophy,
-        design, and technology.
-      </p>
-      <a href="#projects" class="cta-btn">View My Work</a>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <h2 class="section-title">About Me</h2>
-    <p class="about-text">
-      I am learning web development and exploring philosophy.  
-      I enjoy creating minimal, modern designs and improving my skills every day.
-    </p>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <h2 class="section-title">Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">HTML</div>
-      <div class="skill-card">CSS</div>
-      <div class="skill-card">Git & GitHub</div>
-      <div class="skill-card">Responsive Design</div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2 class="section-title">Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>A clean personal portfolio built using HTML & CSS.</p>
-      </div>
-      <div class="project-card">
-        <h3>Practice Projects</h3>
-        <p>Small UI components and layouts for learning.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 TJ Selim Reja • All rights reserved</p>
-  </footer>
-
+    
+    <!-- Hero -->
+    <section class="min-h-screen flex items-center px-6 md:px-8 pt-20 md:pt-24">
+        <div class="max-w-5xl mx-auto w-full">
+            <div class="grid md:grid-cols-12 gap-8 md:gap-12 items-center">
+                <div class="md:col-span-8 animate-slide-in-left">
+                    <h1 class="text-5xl md:text-7xl lg:text-8xl mb-6 md:mb-8 light">
+                        TJ Selim Reja
+                    </h1>
+                    <p class="text-lg md:text-xl lg:text-2xl text-neutral-600 max-w-2xl light leading-relaxed">
+                        AI Developer & Business Builder specializing in digital solutions
+                    </p>
+                </div>
+                <div class="md:col-span-4 animate-slide-in-right">
+                    <img src="https://i.postimg.cc/nrps3QQy/grok_image_1771139414722.jpg" 
+                         alt="TJ Selim Reja - AI Developer" 
+                         class="w-full h-auto rounded-lg shadow-lg"
+                         loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-20 md:py-32 px-6 md:px-8 border-t border-neutral-200">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 md:gap-16">
+                <div class="reveal">
+                    <h2 class="text-sm text-neutral-400 mb-6">About Me</h2>
+                    <h3 class="text-3xl md:text-4xl mb-6 light">Crafting Digital Solutions</h3>
+                    <div class="space-y-4 text-neutral-600 light leading-relaxed">
+                        <p>
+                            With 4 years of experience in AI development and digital business building, 
+                            I specialize in creating intelligent solutions that drive real results.
+                        </p>
+                        <p>
+                            My journey spans across AI/ML development, Python programming, and becoming 
+                            a Notion expert, helping businesses optimize their workflows and productivity.
+                        </p>
+                        <p>
+                            For the past 2 years, I've also been running a successful travel agency, 
+                            combining my technical expertise with business acumen to create comprehensive 
+                            digital solutions.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="reveal space-y-8">
+                    <div>
+                        <h3 class="text-sm mb-4 medium">Core Expertise</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 bg-neutral-100 rounded-full text-sm">AI & Machine Learning</span>
+                            <span class="px-4 py-2 bg-neutral-100 rounded-full text-sm">Python Development</span>
+                            <span class="px-4 py-2 bg-neutral-100 rounded-full text-sm">HTML/CSS</span>
+                            <span class="px-4 py-2 bg-neutral-100 rounded-full text-sm">Notion Expert</span>
+                            <span class="px-4 py-2 bg-neutral-100 rounded-full text-sm">Notion Consultant</span>
+                            <span class="px-4 py-2 bg-neutral-100 rounded-full text-sm">Business Strategy</span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-sm mb-4 medium">Experience Highlights</h3>
+                        <ul class="space-y-3 text-sm text-neutral-600 light">
+                            <li class="flex items-start">
+                                <span class="mr-2">→</span>
+                                <span>4 years in AI/ML development and digital solutions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2">→</span>
+                                <span>2 years running a successful travel agency</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2">→</span>
+                                <span>Notion consultant helping businesses optimize workflows</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2">→</span>
+                                <span>Built and scaled multiple digital products</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Work -->
+    <section id="work" class="py-20 md:py-32 px-6 md:px-8 border-t border-neutral-200">
+        <div class="max-w-5xl mx-auto">
+            <div class="mb-16 md:mb-20 reveal">
+                <h2 class="text-sm text-neutral-400 mb-2">Selected Work</h2>
+                <h3 class="text-3xl md:text-4xl light">Recent Projects</h3>
+            </div>
+            
+            <div class="space-y-24 md:space-y-32">
+                <!-- Project 1: Codarithm -->
+                <div class="grid md:grid-cols-12 gap-8 md:gap-12 reveal">
+                    <div class="md:col-span-7">
+                        <a href="https://codarithm.com" target="_blank" class="block">
+                            <img src="https://i.postimg.cc/CKCnkNRC/IMG_20251125_WA0001.jpg" 
+                                 alt="Codarithm - Professional coding platform" 
+                                 class="w-full h-auto rounded-lg shadow-md project-image"
+                                 loading="lazy">
+                        </a>
+                    </div>
+                    <div class="md:col-span-5 flex flex-col justify-center">
+                        <h3 class="text-2xl md:text-3xl mb-3">Codarithm</h3>
+                        <p class="text-neutral-600 light mb-4 leading-relaxed">
+                            Professional coding platform designed for developers to learn, practice, 
+                            and master programming skills through interactive challenges and projects.
+                        </p>
+                        <div class="text-sm text-neutral-400 mb-6">Coding Platform • Education</div>
+                        <a href="https://codarithm.com" 
+                           target="_blank" 
+                           class="inline-flex items-center text-sm hover:text-neutral-600 transition-colors btn-hover w-fit">
+                            Visit Website 
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 2: LetsGo Abroad -->
+                <div class="grid md:grid-cols-12 gap-8 md:gap-12 reveal">
+                    <div class="md:col-span-7 md:col-start-6">
+                        <a href="https://www.facebook.com/share/1GoP3DgPHN/" target="_blank" class="block">
+                            <img src="https://i.postimg.cc/2yrq0BB2/FB_IMG_1771139649100.jpg" 
+                                 alt="LetsGo Abroad - Visa assistance and travel services" 
+                                 class="w-full h-auto rounded-lg shadow-md project-image"
+                                 loading="lazy">
+                        </a>
+                    </div>
+                    <div class="md:col-span-5 md:col-start-1 md:row-start-1 flex flex-col justify-center">
+                        <h3 class="text-2xl md:text-3xl mb-3">LetsGo Abroad</h3>
+                        <p class="text-neutral-600 light mb-4 leading-relaxed">
+                            Comprehensive visa assistance and travel services helping people achieve 
+                            their dreams of studying, working, or traveling abroad with expert guidance.
+                        </p>
+                        <div class="text-sm text-neutral-400 mb-6">Travel Agency • Visa Services</div>
+                        <a href="https://www.facebook.com/share/1GoP3DgPHN/" 
+                           target="_blank" 
+                           class="inline-flex items-center text-sm hover:text-neutral-600 transition-colors btn-hover w-fit">
+                            View on Facebook 
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 3: Notion Templates -->
+                <div class="grid md:grid-cols-12 gap-8 md:gap-12 reveal">
+                    <div class="md:col-span-7">
+                        <img src="https://i.postimg.cc/nrps3QDb/grok_image_1771139865363.jpg" 
+                             alt="Notion Templates - Custom productivity templates" 
+                             class="w-full h-auto rounded-lg shadow-md project-image"
+                             loading="lazy">
+                    </div>
+                    <div class="md:col-span-5 flex flex-col justify-center">
+                        <h3 class="text-2xl md:text-3xl mb-3">Notion Templates</h3>
+                        <p class="text-neutral-600 light mb-4 leading-relaxed">
+                            Custom-designed Notion templates and systems that help individuals and 
+                            teams boost productivity, organize workflows, and achieve their goals.
+                        </p>
+                        <div class="text-sm text-neutral-400 mb-6">Digital Products • Productivity</div>
+                        <button class="inline-flex items-center text-sm text-neutral-400 cursor-not-allowed">
+                            Coming Soon
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Project 4: AI Research Lab -->
+                <div class="grid md:grid-cols-12 gap-8 md:gap-12 reveal">
+                    <div class="md:col-span-7 md:col-start-6">
+                        <img src="https://i.postimg.cc/WzTD5JJZ/grok_image_1771160730282.jpg" 
+                             alt="AI Research Lab - AI model development and research" 
+                             class="w-full h-auto rounded-lg shadow-md project-image"
+                             loading="lazy">
+                    </div>
+                    <div class="md:col-span-5 md:col-start-1 md:row-start-1 flex flex-col justify-center">
+                        <h3 class="text-2xl md:text-3xl mb-3">AI Research Lab</h3>
+                        <p class="text-neutral-600 light mb-4 leading-relaxed">
+                            Cutting-edge AI model development and research focused on practical 
+                            applications of machine learning to solve real-world business problems.
+                        </p>
+                        <div class="text-sm text-neutral-400 mb-6">Research & Development • AI/ML</div>
+                        <button class="inline-flex items-center text-sm text-neutral-400 cursor-not-allowed">
+                            Coming Soon
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Capabilities -->
+    <section class="py-20 md:py-32 px-6 md:px-8 border-t border-neutral-200">
+        <div class="max-w-5xl mx-auto">
+            <div class="mb-12 reveal">
+                <h2 class="text-sm text-neutral-400 mb-2">What I Do</h2>
+                <h3 class="text-3xl md:text-4xl light">Services & Capabilities</h3>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 md:gap-16">
+                <div class="reveal">
+                    <h3 class="text-base mb-3 medium">AI Development</h3>
+                    <p class="text-sm text-neutral-600 light leading-relaxed">
+                        Machine learning solutions and intelligent automation systems tailored to your business needs
+                    </p>
+                </div>
+                <div class="reveal">
+                    <h3 class="text-base mb-3 medium">Business Building</h3>
+                    <p class="text-sm text-neutral-600 light leading-relaxed">
+                        Strategic planning, scaling strategies, and hands-on business development
+                    </p>
+                </div>
+                <div class="reveal">
+                    <h3 class="text-base mb-3 medium">SaaS Products</h3>
+                    <p class="text-sm text-neutral-600 light leading-relaxed">
+                        Full-stack software development from concept to launch and growth
+                    </p>
+                </div>
+                <div class="reveal">
+                    <h3 class="text-base mb-3 medium">Notion Systems</h3>
+                    <p class="text-sm text-neutral-600 light leading-relaxed">
+                        Custom Notion workspaces, templates, and consulting for maximum productivity
+                    </p>
+                </div>
+                <div class="reveal">
+                    <h3 class="text-base mb-3 medium">Agency Management</h3>
+                    <p class="text-sm text-neutral-600 light leading-relaxed">
+                        Complete digital service operations including travel and visa assistance
+                    </p>
+                </div>
+                <div class="reveal">
+                    <h3 class="text-base mb-3 medium">Design & Branding</h3>
+                    <p class="text-sm text-neutral-600 light leading-relaxed">
+                        Visual design, brand identity, and user experience optimization
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact -->
+    <section id="contact" class="py-20 md:py-32 px-6 md:px-8 border-t border-neutral-200">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 md:gap-20">
+                <div class="reveal">
+                    <h2 class="text-3xl md:text-4xl mb-8 md:mb-12 light">Let's talk</h2>
+                    <div class="space-y-6 text-sm">
+                        <div>
+                            <p class="text-neutral-400 mb-2">Email</p>
+                            <a href="mailto:tjselimreja@gmail.com" 
+                               class="hover:text-neutral-600 transition-colors btn-hover inline-block">
+                                tjselimreja@gmail.com
+                            </a>
+                        </div>
+                        <div>
+                            <p class="text-neutral-400 mb-2">WhatsApp</p>
+                            <a href="https://wa.me/8801890282838" 
+                               target="_blank"
+                               class="hover:text-neutral-600 transition-colors btn-hover inline-block">
+                                +880 1890 282838
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-12 flex flex-wrap gap-6 text-sm">
+                        <a href="https://www.linkedin.com/in/selim-reja-801b732a6" 
+                           target="_blank" 
+                           class="text-neutral-400 hover:text-black transition-colors btn-hover">
+                            LinkedIn
+                        </a>
+                        <a href="https://x.com/tjselimreja" 
+                           target="_blank" 
+                           class="text-neutral-400 hover:text-black transition-colors btn-hover">
+                            Twitter
+                        </a>
+                        <a href="https://www.facebook.com/tjselimreja" 
+                           target="_blank" 
+                           class="text-neutral-400 hover:text-black transition-colors btn-hover">
+                            Facebook
+                        </a>
+                    </div>
+                </div>
+                
+                <form id="contact-form" class="space-y-6 reveal">
+                    <div>
+                        <input 
+                            type="text" 
+                            name="from_name"
+                            placeholder="Name"
+                            class="w-full px-0 py-3 bg-transparent border-b border-neutral-200 focus:outline-none focus:border-black transition-colors text-sm"
+                            required
+                        >
+                    </div>
+                    <div>
+                        <input 
+                            type="email" 
+                            name="from_email"
+                            placeholder="Email"
+                            class="w-full px-0 py-3 bg-transparent border-b border-neutral-200 focus:outline-none focus:border-black transition-colors text-sm"
+                            required
+                        >
+                    </div>
+                    <div>
+                        <textarea 
+                            name="message"
+                            placeholder="Message"
+                            rows="4" 
+                            class="w-full px-0 py-3 bg-transparent border-b border-neutral-200 focus:outline-none focus:border-black transition-colors resize-none text-sm"
+                            required
+                        ></textarea>
+                    </div>
+                    <button 
+                        type="submit" 
+                        id="submit-btn"
+                        class="text-sm hover:text-neutral-600 transition-colors btn-hover inline-flex items-center"
+                    >
+                        <span id="btn-text">Send Message</span>
+                        <span id="btn-loading" class="loading ml-2" style="display: none;"></span>
+                        <svg id="btn-arrow" class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </button>
+                    
+                    <div id="success-message" class="success-message">
+                        ✓ Message sent successfully! I'll get back to you soon.
+                    </div>
+                    
+                    <div id="error-message" class="success-message" style="background: #ef4444; display: none;">
+                        ✗ Failed to send message. Please try again or contact me directly via email.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="py-12 px-6 md:px-8 border-t border-neutral-200">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-sm text-neutral-400">
+                    © 2025 TJ Selim Reja. All rights reserved.
+                </div>
+                <div class="text-sm text-neutral-400">
+                    Built with passion and precision
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.getElementById('mobile-menu').classList.remove('active');
+                }
+            });
+        });
+        
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenu = document.getElementById('close-menu');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+        
+        closeMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+        
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+        
+        // Form submission with EmailJS
+        const contactForm = document.getElementById('contact-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const btnText = document.getElementById('btn-text');
+        const btnLoading = document.getElementById('btn-loading');
+        const btnArrow = document.getElementById('btn-arrow');
+        const successMessage = document.getElementById('success-message');
+        const errorMessage = document.getElementById('error-message');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show loading state
+            submitBtn.disabled = true;
+            btnText.textContent = 'Sending...';
+            btnLoading.style.display = 'inline-block';
+            btnArrow.style.display = 'none';
+            successMessage.classList.remove('show');
+            errorMessage.style.display = 'none';
+            
+            // Send email using EmailJS
+            emailjs.sendForm('service_5nc3puf', 'template_u5ww40k', this)
+                .then(function() {
+                    // Success
+                    submitBtn.disabled = false;
+                    btnText.textContent = 'Send Message';
+                    btnLoading.style.display = 'none';
+                    btnArrow.style.display = 'inline-block';
+                    successMessage.classList.add('show');
+                    contactForm.reset();
+                    
+                    // Hide success message after 5 seconds
+                    setTimeout(() => {
+                        successMessage.classList.remove('show');
+                    }, 5000);
+                }, function(error) {
+                    // Error
+                    console.error('EmailJS Error:', error);
+                    submitBtn.disabled = false;
+                    btnText.textContent = 'Send Message';
+                    btnLoading.style.display = 'none';
+                    btnArrow.style.display = 'inline-block';
+                    errorMessage.style.display = 'block';
+                    
+                    // Hide error message after 5 seconds
+                    setTimeout(() => {
+                        errorMessage.style.display = 'none';
+                    }, 5000);
+                });
+        });
+        
+        // Scroll reveal animation
+        const reveals = document.querySelectorAll('.reveal');
+        
+        function revealOnScroll() {
+            reveals.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll(); // Initial check
+        
+        // Lazy loading for images
+        if ('loading' in HTMLImageElement.prototype) {
+            const images = document.querySelectorAll('img[loading="lazy"]');
+            images.forEach(img => {
+                img.src = img.src;
+            });
+        } else {
+            // Fallback for browsers that don't support lazy loading
+            const script = document.createElement('script');
+            script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
+            document.body.appendChild(script);
+        }
+    </script>
+    
 </body>
 </html>
